@@ -1,0 +1,43 @@
+.title{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.title #img1{
+    width: 100%;
+    height: 100%;
+}
+
+.title #img2{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.text1{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    font-size: 30px;
+}
+
+.example{
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.example img{
+    width: 90%;
+}
+
+.tzq-margin-left {
+    margin-left: 3%;
+}
+
+.center {
+    transform: translateX(-50%);
+    margin-left: 50%;
+}

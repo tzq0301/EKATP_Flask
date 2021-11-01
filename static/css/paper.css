@@ -1,0 +1,79 @@
+.title {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.title #img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.title #img2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.text1 {
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    font-size: 30px;
+}
+
+#article {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 50px;
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+    /*padding-top: 30px;*/
+    padding: 5%;
+}
+
+#title {
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#to1 {
+    position: fixed;
+    top: 40%;
+    left: 85%;
+}
+
+/*#download {*/
+/*    position: fixed;*/
+/*    top: 80%;*/
+/*    left: 90%;*/
+/*}*/
+
+/*#citation {*/
+/*    position: fixed;*/
+/*    top: 87%;*/
+/*    left: 90%;*/
+/*}*/
+
+#download {
+    display: inline;
+}
+
+#citation {
+    display: inline;
+}
+
+.center {
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.tzq-font {
+    font-size: 1.08vw;
+    line-height: 1.6;
+}

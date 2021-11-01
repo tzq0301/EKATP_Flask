@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于EKATP的时序数据预测服务</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+    <script crossorigin="anonymous"
+            integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+            src="http://lib.baomitu.com/jquery/3.6.0/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+
+    <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+
+    <!-- 引入 layui.js -->
+    <script src="//unpkg.com/layui@2.6.8/dist/layui.js"></script>
+</head>
+
+<body>
+{#<div class="top">#}
+{#    <ul class="nav nav-pills">#}
+{#        <li role="presentation" class="active"><a href="/">首页</a></li>#}
+{#        <li role="presentation"><a href="/predict">时间序列数据预测</a></li>#}
+{#        <li role="presentation"><a href="/paper">相关论文</a></li>#}
+{#    </ul>#}
+{#</div>#}
+
+<div class="top tzq-fix-top">
+    <ul class="layui-nav">
+        <li class="layui-nav-item layui-this">
+            <a href="javascript:window.location.assign('/')">首页</a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="javascript:window.location.assign('/predict');">时间序列数据预测</a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="javascript:window.location.assign('/paper');">相关论文</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    {#    <div class="page-header tzq-margin-left">#}
+    {#        <h1>时间序列数据预测服务<small>基于EKATP</small></h1>#}
+    {#    </div>#}
+
+    {#    <div class="title">#}
+    {#        <img src="../static/imgs/scu_xiaohui.png" id="img2">#}
+    {#        <div class="text1">基于EKATP的时序数据预测服务</div>#}
+    {#        <img src="../static/imgs/wallhaven-r7eoo7.png" id="img1">#}
+    {#    </div>#}
+
+    <div class="jumbotron">
+        <h1>基于EKATP的时序数据预测服务</h1>
+        <br>
+        <br>
+        <br>
+        <p>
+            <a class="btn btn-success btn-lg" href="javascript:window.location.assign('/predict')"
+               role="button">进入服务</a>
+        </p>
+    </div>
+
+    <div class="Overview">
+        <div class="Overview1">Overview</div>
+        <div class="Overview2 tzq-font">
+            随着信息时代的发展，人工智能对科学研究的影响愈来巨大，使用人工智能辅助序列数据分析与预测是当下研究提高研究效率和结果精确性的重要方法。然而，近年来的一些神经网络模型对数据的预测精确性大多都乏善可陈。在本项目中，项目组使用一种基于Koopman理论与延时嵌入理论的Autoencoder神经网络模型，在低实验成本的基础上大幅提高对时间序列数据预测的精确性，为相关研究提供大数据支持，进而提高研究精确性，推进相关研究的发展进程。
+        </div>
+        <br>
+    </div>
+
+    {#    <div id="entre">#}
+    {#        <button type="button" class="btn btn-success circle">#}
+    {#            <a href="javascript:window.location.assign('/predict')">基于EKATP的时序数据预测服务</a>#}
+    {#        </button>#}
+    {#    </div>#}
+
+    {#    <div class="line"></div>#}
+
+    <div class="experiment">
+        <div id="title1">预测实验</div>
+        <div id="text1" class="tzq-font">
+            {#        <div>#}
+            项目组构建了混沌的洛伦兹系统以模拟基因组学数据，构建非线性钟摆模型以模拟蛋白质组学数据，构建非线性生物学流体流形系统以模拟代谢组学数据，使用EKATP对各数据集进行预测工作，并进行可视化处理。下图证明了EKATP优异的预测性能与面对噪声的鲁棒性。
+        </div>
+        <img src="../static/imgs/results.jpg" alt="无法显示结果图" class="tzq-center" width="50%">
+{#        <img id="img3" src="../static/imgs/manifold.png">#}
+        {#        <img id="img3" src="../static/imgs/manifold.png" alt="无法显示流形数据实验结果" class="img-thumbnail">#}
+{#        <img id="img4" src="../static/imgs/pendulum.png">#}
+{#        <img id="img5" src="../static/imgs/lorentz.png">#}
+        <br><br>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="Others">
+        <div id="text2">
+            <div id="title2">Citation</div>
+            <p class="tzq-font">Liu S, You Y, Tong Z and Zhang L (2021) Developing an Embedding, Koopman and Autoencoder
+            Technologies-Based Multi-Omics Time Series Predictive Model (EKATP) for Systems Biology research. Front.
+            Genet. 12:761629. doi: 10.3389/fgene.2021.761629.</p>
+            <br>
+            <br>
+            <br>
+            <div id="title3">Funding Support</div>
+            <p class="tzq-font">This work was supported by the National Science and Technology Major Project (2018ZX10201002).</p>
+            <br>
+            <br>
+            <br>
+            <div id="title4">Contact Us</div>
+            <p class="tzq-font">Address: College of Software Engineering, Sichuan University. No. 24 South Section 1, Yihuan Road, Chengdu Sichuan, China, 610065. E-mail: 1661610563@qq.com</p>
+            <br>
+        </div>
+    </div>
+
+    <a href="https://sw.scu.edu.cn"><img src="../static/imgs/scu_xiaohui.png" alt="" id="xiaohui"/></a>
+
+</div>
+</body>
+
+</html>

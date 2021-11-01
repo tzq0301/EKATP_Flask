@@ -1,0 +1,89 @@
+body {
+    background-color: whitesmoke;
+}
+
+.title{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.title #img1{
+    width: 100%;
+    height: 100%;
+}
+
+.title #img2{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.text1{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    font-size: 30px;
+}
+
+.container{
+    width: 60%;
+    padding: 5%;
+    background-color: white;
+
+    /*height: 700px;*/
+    margin-top: 20px;
+    position:relative;
+
+    border-radius: 50px;
+}
+
+#topc{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#example{
+    position: absolute;
+    top: 450px;
+}
+
+#data{
+    position: absolute;
+    top: 450px;
+    right: 0px;
+}
+
+#example a {
+    color: white;
+}
+
+#data a{
+    color:white;
+}
+
+.tzq-margin-left {
+    margin-left: 3%;
+}
+
+.tzq-p {
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.tzq-gene-img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    width: 70%;
+    height: 70%;
+}
+
+.tzq-center {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.tzq-a {
+    text-underline: black;
+}
