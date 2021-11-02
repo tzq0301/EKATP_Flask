@@ -1,4 +1,5 @@
 import os
+from argparse import ArgumentParser
 
 import torch
 from flask import Flask, render_template, request, send_file
@@ -81,4 +82,9 @@ def data_gene_csv():
 
 
 if __name__ == '__main__':
-    app.run(port=PORT)
+    parser = ArgumentParser()
+    parser.add_argument('--port', type=int, default=PORT, help="Specific the port")
+
+    args = parser.parse_args()
+
+    app.run(port=args.port)
